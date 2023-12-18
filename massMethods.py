@@ -9,8 +9,3 @@ class mass:
     def lb_to_grams(self):
       return(self.mass *453.592)
 
-
-asdkhsakdjsakdjsakjdksa
-
-
-TryL 
