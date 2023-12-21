@@ -5,15 +5,15 @@ userinput = 0
 conversion = 0
 #ask user what orginal measurement value is:
 
-while userinput == 0 or userinput > 6:
+while userinput == 0 or userinput > 8:
   print('Enter 1 for oz.')
   print('Enter 2 for lb.')
   print('Enter 3 for cups.')
   print('Enter 4 for pint.')
   print('Enter 5 for quart.')
   print('Enter 6 for gallon.')
-  #print('Enter 7 for tablespoon.')
-  #print('Enter 8 for teaspoon.')
+  print('Enter 7 for tablespoon.')
+  print('Enter 8 for teaspoon.')
   userinput = int(input('Please enter a unit type.'))
   #might break if it is a letter
 #get user input for unit type
@@ -55,8 +55,10 @@ if userinput == 5:
   print(inputvol.quart_to_liters())
 if userinput == 6:
   print(inputvol.gallon_to_liters())
-#if userinput == 7:
-#if userinput == 8:
+if userinput == 7:
+  print(inputvol.tbsp_to_mL())
+if userinput == 8:
+  print(inputvol.tsp_to_mL())
 #comment: how do i round numbers?
 
 
