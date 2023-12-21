@@ -12,8 +12,8 @@ while userinput == 0 or userinput > 6:
   print('Enter 4 for pint.')
   print('Enter 5 for quart.')
   print('Enter 6 for gallon.')
-  #print('Enter 7 for tbs.')
-  #print('Enter 8 for tsp.')
+  #print('Enter 7 for tablespoon.')
+  #print('Enter 8 for teaspoon.')
   userinput = int(input('Please enter a unit type.'))
   #might break if it is a letter
 #get user input for unit type
@@ -55,3 +55,7 @@ if userinput == 5:
   print(inputvol.quart_to_liters())
 if userinput == 6:
   print(inputvol.gallon_to_liters())
+#if userinput == 7:
+#if userinput == 8:
+
+
