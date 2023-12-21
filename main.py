@@ -48,7 +48,8 @@ inputvol = volcalc(conversion)
 #if userinput == 1:
 if userinput == 2:
   print(inputmass.lb_to_oz())
-#if userinput == 3:
+if userinput == 3:
+  print(inputmass.cups_to_ml())
 if userinput == 4:
   print(inputvol.pints_to_ml())
 if userinput == 5:
