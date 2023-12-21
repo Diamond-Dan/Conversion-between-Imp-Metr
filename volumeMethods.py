@@ -31,3 +31,5 @@ class Volume:
   # Gallon (gallon)*4.5L
   # Quart (quart)*1.1L
   # Pints (pint)*473.2ml 
+
+#comment: these conversions probably aren't as accurate a google, might be better to use the google conversion
