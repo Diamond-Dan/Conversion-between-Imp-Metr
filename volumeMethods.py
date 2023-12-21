@@ -18,7 +18,7 @@ class Volume:
     return self._volume * 4500
   def quart_to_liters(self):
     return self._volume * 1.1 
-  def quart_to_liters(self):
+  def quart_to_ml(self):
     return self._volume * 1100
   def pints_to_ml(self):
     return self._volume * 473.2
