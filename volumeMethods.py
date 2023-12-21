@@ -15,9 +15,9 @@ class Volume:
   def gallon_to_liters(self):
     return self._volume * 4.5
   def quart_to_liters(self):
-    return self.volume * 1.1 
+    return self._volume * 1.1 
   def pints_to_ml(self):
-    return self.volume *473.2
+    return self._volume *473.2
 
 
   # Volume 
