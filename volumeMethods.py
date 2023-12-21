@@ -9,13 +9,27 @@ class Volume:
   def tsp_to_mL(self):
     return self._volume * 4.929
   def cups_to_ml(self):
-      return(self.volume *)
+    return(self._volume * 250)
+ # def tbsp_to_mL(self):
+    
+  def gallon_to_liters(self):
+    return self._volume * 3.785
+#  def gallon_to_ml(self):
+ #   return self._volume * 3785.41
+  def quart_to_liters(self):
+    return self._volume * 0.946353 
+#  def quart_to_ml(self):
+ #   return self._volume * 946.353
+  def pints_to_ml(self):
+    return self._volume * 473.176249991928
 
 
   # Volume 
-  # TSP float= t *4.929ml  29.5735
+  # TSP float= (teaspoon) *5ml
   # TBSP (tablespoon)*15ml
   # Cups (cups)*250ml 
   # Gallon (gallon)*4.5L
   # Quart (quart)*1.1L
   # Pints (pint)*473.2ml 
+
+#comment: these conversions probably aren't as accurate a google, might be better to use the google conversion
