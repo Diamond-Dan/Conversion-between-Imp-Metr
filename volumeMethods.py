@@ -13,15 +13,15 @@ class Volume:
  # def tbsp_to_mL(self):
     
   def gallon_to_liters(self):
-    return self._volume * 4.5
+    return self._volume * 3.785
   def gallon_to_ml(self):
-    return self._volume * 4500
+    return self._volume * 3785.41
   def quart_to_liters(self):
-    return self._volume * 1.1 
+    return self._volume * 0.946353 
   def quart_to_ml(self):
-    return self._volume * 1100
+    return self._volume * 946.353
   def pints_to_ml(self):
-    return self._volume * 473.2
+    return self._volume * 473.176249991928
 
 
   # Volume 

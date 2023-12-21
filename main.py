@@ -12,6 +12,8 @@ while userinput == 0 or userinput > 6:
   print('Enter 4 for pint.')
   print('Enter 5 for quart.')
   print('Enter 6 for gallon.')
+  #print('Enter 7 for tbs.')
+  #print('Enter 8 for tsp.')
   userinput = int(input('Please enter a unit type.'))
   #might break if it is a letter
 #get user input for unit type
@@ -42,7 +44,14 @@ masscalc = massMethods.mass
 volcalc =  volumeMethods.Volume
 inputmass = masscalc(conversion)
 inputvol = volcalc(conversion)
+
+#if userinput == 1:
 if userinput == 2:
   print(inputmass.lb_to_oz())
-
-# if userinput == 1:
+#if userinput == 3:
+if userinput == 4:
+  print(inputvol.pints_to_ml())
+if userinput == 5:
+  print(inputvol.quart_to_liters())
+if userinput == 6:
+  print(inputvol.gallon_to_liters())
