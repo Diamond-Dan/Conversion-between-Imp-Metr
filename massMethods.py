@@ -14,3 +14,4 @@ class mass:
 
   def grams_to_lb(self):
     return (self.mass / 453.592)
+  
