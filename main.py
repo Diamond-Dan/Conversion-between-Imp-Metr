@@ -36,6 +36,10 @@ while isinstance(conversion, float) == False:
 #       return float(n).is_integer()
 
 #send grams to mass, and return desired unit type
+
+
+
+#send grams to mass, and return desired unit type
 masscalc = massMethods.mass
 #volcalc =  volumeMethods.Volume
 inputmass = masscalc(conversion)
