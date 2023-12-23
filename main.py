@@ -2,6 +2,7 @@ import massMethods
 import volumeMethods
 
 userinput = 0 # User input for menu 1
+userinput2 =0 #second user input
 conversion = 0 #orginal number of units in userinput
 orginal_unit_name ='' # orginal unit type
 new_unit_name = '' #unit type being converted to
@@ -20,6 +21,8 @@ while userinput == 0 or userinput > 8:
   userinput = int(input('Please your starting unit of measurement type.'))
   #might break if it is a letter
 #get user input for unit type
+if userinput == 1:
+  orginal_unit_name = 'oz'
 
 if userinput == 1 or userinput == 2:
   print('Enter 1 for grams') #create methods
@@ -29,6 +32,8 @@ if userinput == 1 or userinput == 2:
 
 if userinput >2:
  # enter metric conversion
+  print('Enter 1 for liters') 
+  print('Enter 2 for mililiters') 
   userinput2= int(input('Please select your desired unit to conver to.'))
 #NOTES: method for each converstion
 
@@ -57,7 +62,12 @@ volcalc =  volumeMethods.Volume
 inputmass = masscalc(conversion)
 inputvol = volcalc(conversion)
 
-#if userinput == 1:
+if userinput == 1:
+  end_unit = (inputmass.oz_to_grams())
+  new_unit_name= 'grams'
+  if(userinput2 == 2):
+    end_unit = end_unit/10
+    new_unit_name='Kilograms'
 if userinput == 2:
    end_unit=(inputmass.lb_to_oz())
 if userinput == 3:
@@ -75,4 +85,5 @@ if userinput == 8:
 #comment: how do i round numbers?
 
 
-print('You converted ' + str(conversion) + ' ' + orginal_unit_name + ' to ' end_unit + new_unit_name + '.'')
+print('You converted ' + str(conversion) + ' ' + 
+      orginal_unit_name + ' to ' + str(end_unit) + new_unit_name + '.')
